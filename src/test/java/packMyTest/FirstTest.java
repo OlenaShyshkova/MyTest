@@ -19,7 +19,7 @@ public class FirstTest {
         element = driver.findElement(By.id("lst-ib"));
         //element = driver.findElement(By.name("passwd"));
         //element = driver.findElement(By.xpath("//input[@id='passwd-id']"));
-        element.sendKeys("Приветствую изюмского Фунтика!");
+        element.sendKeys("Слава Украине!");
     }
 
     }
