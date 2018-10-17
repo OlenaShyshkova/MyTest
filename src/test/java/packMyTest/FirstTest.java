@@ -17,6 +17,28 @@ public class FirstTest {
     public static void main(String[] args)
     {
 
+        // 1 Инициализацию веб драйвера лучше сделать в отдельном классе и создавать инсианс веб драйвера перед запуском тестов
+        // есть аннотации которые помогут это сделать 
+        
+        // 2 в тестах должна быть только бизнес логика, они ничего не должны знать о реализации
+        // пример 
+        // public void testValidLogin() {
+        //    loginPage.enterUserName(VALID_USER_NAME);
+        //    loginPage.enterPassword(VALID_PASSWRD);
+        //    loginPage.clickLoginButton();
+        //    
+        //    дальше ассерт
+        //}
+        //    
+        // 3 значения не хардкодить в тестах - вынести в константы. Можно сделать отдельный класс который будет хранить эти константы
+        // 
+        // 4 Сделать loginPage - там будут локаторы к элементам (в константах) и методы которые используются для манипуляции с элементами на этой странице
+        // 5 xpath лучше делать не абсолютные когда ты пишешь весь путь, а относительные  - https://www.guru99.com/xpath-selenium.html
+        
+        
+         
+        
+        
         System.setProperty("webdriver.gecko.driver","C:/Users/Yan/Desktop/Temp/geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         WebElement element;
